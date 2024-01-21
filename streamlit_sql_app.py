@@ -44,7 +44,7 @@ query_engine = NLSQLTableQueryEngine(sql_database=sql_database, service_context=
 
 # Streamlit interface
 #st.title()
-st.markdown("<h2 style='text-align: justify; color: grey;'>Industry data about salmon fish farming and fish industry in general</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: justify; color: grey;'>Industry data about salmon fish farming and fish industry in general 🐠 🍣</h2>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: justify; color: grey;'>The knowledge base is from 2021</h3>", unsafe_allow_html=True)
 
 # Check for the session state key, initialize if not present
