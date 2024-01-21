@@ -17,7 +17,6 @@ system_prompt="""You are an expert in salmon fish farming, salmon busines and
 service_context = ServiceContext.from_defaults(llm=llm, system_prompt=system_prompt )
 from llama_index.indices.struct_store.sql_query import NLSQLTableQueryEngine
 from llama_index import SQLDatabase
-#importing SQLAlchemy and adding the db
 
 from sqlalchemy import (
     create_engine,
@@ -45,10 +44,7 @@ query_engine = NLSQLTableQueryEngine(sql_database=sql_database, service_context=
 # Streamlit interface
 #st.title()
 st.markdown("<h2 style='text-align: justify; color: grey;'>Industry data about salmon fish farming and fish industry in general</h2>", unsafe_allow_html=True)
-#st.markdown("<h3 style='text-align: justify; color: grey;'>You can ask here any question related to batery metals, batteries and EV</h3>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: justify; color: grey;'>The knoledge base is from 2021</h3>", unsafe_allow_html=True)
-#st.header('You can ask here any question related to batery metals, batteries and EV')
-#st.header('The knoledge base is from 2022, also it provides the entire mining news from 2024')
 
 # Check for the session state key, initialize if not present
 if 'history' not in st.session_state:
