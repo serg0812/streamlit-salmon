@@ -1,12 +1,12 @@
 import streamlit as st
 #changing the model and indexing the content for vector store
 from llama_index.llms import OpenAI
-#llm = OpenAI(temperature=0, model="gpt-4-1106-preview")
-llm = OpenAI(temperature=0, model="gpt-3.5-turbo-1106")
+llm = OpenAI(temperature=0, model="gpt-4-1106-preview")
+#llm = OpenAI(temperature=0, model="gpt-3.5-turbo-1106")
 from llama_index import ServiceContext
 
 system_prompt="""You are an expert in salmon fish farming, salmon busines and 
-    trade and fish business in general. You have the knowledge up until January 2024 inclusive  
+    trade and fish business in general. You have the knowledge up until January 2024 inclusive.  
     You data is in SQL database, the schema is:
     date: datetime description: this is the date of the article
     header: str description: this is the header or the article
