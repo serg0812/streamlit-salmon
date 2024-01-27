@@ -1,6 +1,6 @@
 import streamlit as st
 from openai import OpenAI
-import openai
+from pinecone import Pinecone
 
 from transformers import AutoTokenizer
 from sentence_transformers import SentenceTransformer
