@@ -88,12 +88,12 @@ def get_answer_from_openai(question):
 
 st.set_page_config(page_title="Chat with the Streamlit about salmon industry", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
 #openai.api_key = st.secrets.openai_key
-st.title("Trends in salmon farming 💬")
-st.info("Here you can ask chatbot about recent trends in salmon industry", icon="📃")
+st.title("Trends in salmon farming 🐠 🍣")
+st.info("Here you can ask about recent trends in salmon industry", icon="💬")
          
 if "messages" not in st.session_state.keys(): # Initialize the chat messages history
     st.session_state.messages = [
-        {"role": "assistant", "content": "Ask me a question here"}
+        {"role": "assistant", "content": "Your question about salmon fish farming"}
     ]
 
 
